@@ -25,7 +25,7 @@ export default function Home() {
   <div className="row">
     {list &&
   list.map ((komik) => (
-      <div className="col-md-4">
+      <div className="col-md-4" key={komik.title}>
       <div className="card">
       <img src={komik.image} className="card-img-top"/>
       <div className="card-body">
